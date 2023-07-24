@@ -6,4 +6,8 @@
   html {
     font-family: Barlow, system-ui, sans-serif;
   }
+  #root{
+        height: 100vh;
+        position: relative;
+  }
 }
