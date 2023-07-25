@@ -1,25 +1,13 @@
 import Header from '../components/Header';
-import { Outlet, matchPath, useLocation } from "react-router-dom";
-import { bgConfig } from 'constants/Global';
-import classNames from 'classnames';
+import { Outlet } from "react-router-dom";
 
 const Main = () => {
-  const location = useLocation()
-  const currentRouteBgIndex = bgConfig.filter((data) =>
-    matchPath(data.name, location.pathname)
-  );
-  const mobileBg = currentRouteBgIndex[0]['mobile'];
-  const tabletBg = currentRouteBgIndex[0]['tablet'];
-  const desktopBg = currentRouteBgIndex[0]['desktop'];
-
 
   return (
-    <div className={classNames('bg-clip-content bg-cover bg-no-repeat bg-right-bottom absolute w-full h-full', mobileBg, tabletBg, desktopBg)} >
-      < Header />
-      <div className="container">
-        <Outlet />
-      </div>
-    </div >
+    <div className="container mx-auto sm:pt-6 md:pt-0 lg:pt-10  px-4">
+      <Header />
+      <Outlet />
+    </div>
   )
 };
 

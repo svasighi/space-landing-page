@@ -10,4 +10,19 @@
         height: 100vh;
         position: relative;
   }
+  body{
+    @apply bg-fixed bg-clip-content bg-cover bg-no-repeat bg-right-bottom w-full h-full;
+  }
+  body.home{
+    @apply bg-home-mobile md:bg-home-tablet lg:bg-home-desktop;
+  }
+   body.crew{
+    @apply bg-crew-mobile md:bg-crew-tablet lg:bg-crew-desktop;
+  }
+   body.destination{
+    @apply bg-destination-mobile md:bg-destination-tablet lg:bg-destination-desktop;
+  }
+   body.technology{
+    @apply bg-technology-mobile md:bg-technology-tablet lg:bg-technology-desktop;    
+  }
 }

@@ -4,7 +4,7 @@ import { logo } from '../../constants/Global'
 const Header = ({ }): JSX.Element => {
 
   return (
-    <div className="flex justify-between items-center  lg:ml-24 md:max-lg:ml-16 lg:mt-10 md:mt-0 md:ml-12 mt-6 ml-6">
+    <div className="flex justify-between items-center container max-sm:h-[105px]">
       <a>
         <img src={logo} alt="logo"></img>
       </a>
